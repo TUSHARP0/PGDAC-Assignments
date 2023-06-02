@@ -9,5 +9,5 @@ emparr.sort()
 
 console.log("Employee Names:");
 for (i = 0; i < emparr.length; i++) {
-  console.log(employees[i]);
+  console.log(emparr[i]);
 }
