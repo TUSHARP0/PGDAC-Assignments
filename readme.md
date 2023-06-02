@@ -1,4 +1,4 @@
-# iacsd-pgdac-march23
+# To my fellow batchmates of IACSD PGDAC (March-23 batch)
 This repository hold the solution to the assignments and problem statements give by Institute of Advanced Computing and Software Development to the batch of March 2023, Post Graduation Diploma in Advanced Computing.
 
 This repository would not have been possible without the constant support from my fellow batchmates.
