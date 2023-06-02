@@ -3,10 +3,10 @@ This repository hold the solution to the assignments and problem statements give
 
 This repository would not have been possible without the constant support from my fellow batchmates.
 
-[Tushar Pawar](https://github.com/TUSHARP0)
-[Mohan Talavar](https://github.com/MohanTalavar)
-[Pranay Patil](https://github.com/iampranaypatil)
-[Sourabh Pawar](https://github.com/celtoxx)
+[Tushar Pawar](https://github.com/TUSHARP0)\
+[Mohan Talavar](https://github.com/MohanTalavar)\
+[Pranay Patil](https://github.com/iampranaypatil)\
+[Sourabh Pawar](https://github.com/celtoxx)\
 [Somesh Dahotre](https://github.com/totally-somesh)
 
 Their contributions and help have been extremely helpful in creating and maintaining this repository.
