@@ -2,9 +2,22 @@
     <head>
         <title>Sum of Digits</title>
     </head>
+    <script src="sum-of-digits-with-validation.js"></script>
     <body>
         <div id="main">
-            
+            <table>
+                <tbody>
+                    <tr>
+                        <td>Enter a positive Number less than 1000:</td>
+                        <td><input type="text" name="num" id="num"></td>
+                    </tr>
+                    <tr>
+                        <td>Sum of Digits:</td>
+                        <td><input type="text" name="sol" id="sol" disabled></td>
+                    </tr>
+                </tbody>
+            </table>
+            <button type="button" id="btn" name="btn" onclick="sumOfDigits()">Solution</button>
         </div>
     </body>
 </html>
