@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>
+            Compound Interest Calculator
+        </title>
+        <script src="compound-interest.js"></script>
+    </head>
+    <body>
+        <div id="main">
+            <table>
+                <tbody>
+                    <tr>
+                        <td>Enter Amount:</td>
+                        <td><input type="text" name="amt" id="amt"></td>
+                    </tr>
+                    <tr>
+                        <td>Enter Duration:</td>
+                        <td><input type="text" name="time" id="time"></td>
+                    </tr>
+                    <tr>
+                        <td>Enter Interest:</td>
+                        <td><input type="text" name="int" id="int"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <button type="button" id="compInt" name="compInt" onclick="calcCompInt()">Calculate Compound Interest</button>
+        </div>
+        <div id="answer"><br></div>
+    </body>
+</html>
