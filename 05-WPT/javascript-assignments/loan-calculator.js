@@ -1,0 +1,3 @@
+computeInf=()=>{
+    amt = 
+}

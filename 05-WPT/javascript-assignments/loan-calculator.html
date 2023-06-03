@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>Payment Calculator</title>
+        <script src="loan-calculator.js"></script>
+    </head>
+    <body>
+        <fieldset>
+            <h2>Enter Loan Information</h2>
+            <hr>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>Amount of the Loan (any currency):</td>
+                        <td><input type="text" name="amt" id="amt"></td>
+                    </tr>
+                    <tr>
+                        <td>Annual percentage rate of interest:</td>
+                        <td><input type="text" name="int" id="int"></td>
+                    </tr>
+                    <tr>
+                        <td>Repayment period in years:</td>
+                        <td><input type="text" name="time" id="time"></td>
+                    </tr>
+                </tbody>
+            </table><br>
+
+            <button type="button" id="btn" name="btn" onclick="computeInfo()">Compute Payment Information</button><br>
+            <br>
+
+            <table>
+                <tbody>
+                    <tr>
+                        <td>Your Monthly Payment will be:</td>
+                        <td><input type="text" name="emi" id="emi" disabled></td>
+                    </tr>
+                    <tr>
+                        <td>Your Total Payment will be:</td>
+                        <td><input type="text" name="total_amt" id="total_amt" disabled></td>
+                    </tr>
+                    <tr>
+                        <td>Your Total Interest Payment will be:</td>
+                        <td><input type="text" name="total_int" id="total_int" disabled></td>
+                    </tr>
+                </tbody>
+            </table>
+        </fieldset>
+    </body>
+</html>
