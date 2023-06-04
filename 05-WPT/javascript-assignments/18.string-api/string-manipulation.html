@@ -1,40 +1,87 @@
 <html>
-    <head>
-        <title>
-            String Manipulation
-        </title>
-        <script src="string-manipulation.js"></script>
-    </head>
-    <body>
-        <div id="main">
-            <table>
-                <tbody>
-                    <tr>
-                        <td>Enter String</td>
-                        <td><input type="text" name="main_string" id="main_string"></td>
-                    </tr>
-                    <tr>
-                        <td>Enter Sub String</td>
-                        <td><input type="text" name="sub_string" id="sub_string"></td>
-                    </tr>
-                    <tr>
-                        <td>Replace with String</td>
-                        <td><input type="text" name="rep_string" id="rep_string"></td>
-                    </tr>
-                </tbody>
-            </table>
-            <br>
-            <input type="radio" id="search" name="operations" value="search"><label for="search">Search Sub-string in main String</label><br/>
-            <input type="radio" id="upper_case" name="operations" value="upper_case"><label for="upper_case">To Upper-Case</label><br/>
-            <input type="radio" id="lower_case" name="operations" value="lower_case"><label for="lower_case">To Lower-Case</label><br/>
-            <input type="radio" id="trim" name="operations" value="trim"><label for="trim">Trim Spaces</label><br/>
-            <input type="radio" id="concat" name="operations" value="concat"><label for="concat">Concatanate</label><br/>
-            <input type="radio" id="replace" name="operations" value="replace"><label for="replace">Replace</label><br/>
-            <br>
-            <button type="button" id="btn" name="btn" onclick="operate()">Operate</button>
-        </div>
-        <div id="answer">
-            <br/>
-        </div>
-    </body>
+  <head>
+    <title>String Manipulation</title>
+    <style>
+      .btns {
+        background-color: white;
+        border: 2px solid black;
+        color: black;
+        padding: 5px 10px;
+        text-align: center;
+        display: inline-block;
+        font-size: 40px;
+        margin: 2px 10px;
+        cursor: pointer;
+        border-radius: 20px;
+        box-shadow: 2px 0.5px;
+      }
+    </style>
+    <script src="string-manipulation.js"></script>
+
+    <script></script>
+  </head>
+  <body>
+    <div id="main">
+      <table>
+        <tbody>
+          <tr>
+            <td>Enter String</td>
+            <td><input type="text" name="main_string" id="main_string" /></td>
+          </tr>
+          <tr>
+            <td>Enter Sub String</td>
+            <td><input type="text" name="sub_string" id="sub_string" /></td>
+          </tr>
+          <tr>
+            <td>Replace with String</td>
+            <td><input type="text" name="rep_string" id="rep_string" /></td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+      <input type="radio" id="search" name="operations" value="search" /><label
+        for="search"
+        >Search Sub-string in main String</label
+      ><br />
+      <input
+        type="radio"
+        id="upper_case"
+        name="operations"
+        value="upper_case"
+      /><label for="upper_case">To Upper-Case</label><br />
+      <input
+        type="radio"
+        id="lower_case"
+        name="operations"
+        value="lower_case"
+      /><label for="lower_case">To Lower-Case</label><br />
+      <input type="radio" id="trim" name="operations" value="trim" /><label
+        for="trim"
+        >Trim Spaces</label
+      ><br />
+      <input type="radio" id="concat" name="operations" value="concat" /><label
+        for="concat"
+        >Concatanate</label
+      ><br />
+      <input
+        type="radio"
+        id="replace"
+        name="operations"
+        value="replace"
+      /><label for="replace">Replace</label><br />
+      <br />
+      <button
+        type="button"
+        class="btns"
+        id="btn"
+        name="btn"
+        onclick="operate()"
+      >
+        Operate
+      </button>
+    </div>
+    <div id="answer">
+      <br />
+    </div>
+  </body>
 </html>
