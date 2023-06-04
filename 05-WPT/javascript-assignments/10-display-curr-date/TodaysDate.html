@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <style>
+      .btns {
+        background-color: white;
+        border: 2px solid black;
+        color: blue;
+        padding: 5px 10px;
+        text-align: center;
+        display: inline-block;
+        font-size: 10px;
+        margin: 10px 30px;
+        cursor: pointer;
+        border-radius: 20px;
+        box-shadow: 2px 0.5px;
+      }
+    </style>
+    <script src="display-curr-date.js"></script>
+    <script>
+      getDateDetails1 = () => {
+        var output = displayCurrDate();
+        document.write(output);
+      };
+    </script>
+  </head>
+
+  <body>
+    <div class="myDiv">
+      <pre id="myPre">
+      This Integration Of JS & HTML Is Created By Mr. Ahad Sheikh.
+      
+      Feel Free To Visit ' gitabdulahad ' on GITHUB For More Of Such
+      Educational Content.
+      </pre>
+    </div>
+
+    <button
+      class="btns"
+      onclick="window.location.href='https://github.com/gitabdulahad';"
+    >
+      Connect To Mr.Ahad On GitHub
+    </button>
+    <br />
+    <br />
+
+    <button type="button" class="btns" onclick="getDateDetails1()">
+      Press Here To Get Date Details
+    </button>
+  </body>
+</html>
