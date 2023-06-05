@@ -6,7 +6,6 @@ operate=()=>{
     
     //To retrieve selected radio button
     var arr = document.getElementsByName("operations");
-    console.log(arr);
     for (var i = 0; i < arr.length; i++) {
         if (arr[i].checked) {
             op = arr[i].value;
@@ -50,7 +49,5 @@ operate=()=>{
             document.getElementById("answer").innerHTML="<br>"+ str
             break;
 
-
-        } //end of switch
-
-    } //end of function
+        }
+    }
