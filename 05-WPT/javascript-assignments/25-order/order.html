@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Order</title>
+        <script src="order.js"></script>
+    </head>
+    <body>
+        <form>
+            Order Id : <input type="text" name="oid" id="oid" autofocus><span>*</span><span id="err1"></span><br>
+            Cust name : <input type="text" name="cname" id="cname"><span>*</span><span id="err2"></span><br>
+            Enter Billing date : <input type="text" name="date" id="bdate" value="yyyy-mm-dd"><span>*</span><span id="err3"></span><br>
+            Enter Shipping date : <input type="text" name="date" id="sdate"  value="yyyy-mm-dd"><span>*</span><span id="err4" ></span><br>
+            Order total : <input type="text" name="total" id="total"><span>*</span><span id="err5"></span><br>
+            <button type="button" onclick="displayOrder()">Display</button>
+        </form>
+        <div id="mydiv"></div>
+        <div id="mydiv2"></div>
+
+    </body>
+</html>
