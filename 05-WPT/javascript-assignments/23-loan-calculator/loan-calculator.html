@@ -1,48 +1,84 @@
 <html>
     <head>
-        <title>Payment Calculator</title>
+        <title>Loan Calculator</title>
         <script src="loan-calculator.js"></script>
     </head>
     <body>
-        <fieldset>
-            <h2>Enter Loan Information</h2>
-            <hr>
-            <table>
-                <tbody>
-                    <tr>
-                        <td>Amount of the Loan (any currency):</td>
-                        <td><input type="text" name="amt" id="amt"></td>
-                    </tr>
-                    <tr>
-                        <td>Annual percentage rate of interest:</td>
-                        <td><input type="text" name="int" id="int"></td>
-                    </tr>
-                    <tr>
-                        <td>Repayment period in years:</td>
-                        <td><input type="text" name="time" id="time"></td>
-                    </tr>
-                </tbody>
-            </table><br>
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <h3>Enter Loan Information :</h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Amount of the loan (any currency) : 
 
-            <button type="button" id="btn" name="btn" onclick="computeInfo()">Compute Payment Information</button><br>
-            <br>
+                    </td>
+                    <td>
+                        <input type="text" name="amount" id="amount"><span>*</span><span id="err1"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Annual percentage rate of interest : 
+                    </td>
+                    <td>
+                        <input type="text" name="rate" id="rate"><span>*</span><span id="err2"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Repaymet period in years : 
+                    </td>
+                    <td>
+                        <input type="text" name="year" id="year"><span>*</span><span id="err3"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="button" onclick="computePayment()">Compute</button> 
+                    </td>
+                </tr>
+                <tr>
+                    <td><br></td>
+                </tr>
+                <tr>
+                    <td>
+                        <h3>Payment Informantion : </h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Your monthly payment will be : 
+                    </td>
+                    <td>
+                        <input type="text" name="payment" id="payment" disabled>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Your total payment will be : 
 
-            <table>
-                <tbody>
-                    <tr>
-                        <td>Your Monthly Payment will be:</td>
-                        <td><input type="text" name="emi" id="emi" disabled></td>
-                    </tr>
-                    <tr>
-                        <td>Your Total Payment will be:</td>
-                        <td><input type="text" name="total_amt" id="total_amt" disabled></td>
-                    </tr>
-                    <tr>
-                        <td>Your Total Interest Payment will be:</td>
-                        <td><input type="text" name="total_int" id="total_int" disabled></td>
-                    </tr>
-                </tbody>
-            </table>
-        </fieldset>
+                    </td>
+                    <td>
+                        <input type="text" name="total" id="total" disabled>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Your total intrest payments will be : 
+                    </td>
+                    <td>
+                        <input type="text" name="interest" id="interest" disabled>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </body>
 </html>
