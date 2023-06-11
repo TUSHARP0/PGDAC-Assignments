@@ -1,0 +1,71 @@
+<html>
+    <head><title>Info</title>
+        <style>
+            span{
+                color: red;
+            }
+        </style>
+    <script src="personal-details.js"></script>
+    </head>
+    <body>
+        <table border="2">
+            <tr>
+                <td>Name</td>
+                <td><input type="text" name="nm" id="nm"></td>
+                <td><span>*</span><span id="err1"></span></td>
+            </tr>
+            <tr>
+                <td>Birth Date</td>
+                <td><select name="month" id="mm">
+                    <option value="test">---select---</option>
+                    <option value="January">January</option>
+                    <option value="February">February</option>
+                    <option value="March">March</option>
+                    <option value="April">April</option>
+                    <option value="May">May</option>
+                    <option value="June">June</option>
+                    <option value="July">July</option>
+                    <option value="August">August</option>
+                    <option value="September">September</option>
+                    <option value="October">October</option>
+                    <option value="November">November</option>
+                    <option value="December">December</option>
+                </select>
+                <select name="day" id="dd">
+                    <option value="test">---select---</option>
+                </select>
+                <select name="year" id="yyyy">
+                    <option value="test">---select---</option>
+                
+            </td>
+            <td></select><span>*</span><span id="err2"></span></td>
+            </tr>
+            <tr>
+                <td>Email Address</td>
+                <td><input type="text" name="email" id="email"></span></td>
+                <td><span>*</span><span id="err3"></span></td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td><input type="radio" name="gender" id="m" value="Male" checked><label for="m">Male</label><br>
+                    <input type="radio" name="gender" id="f" value="Female"><label for="f">Female</label></td>
+                    <td><span>*</span><span id="err4"></span></td>
+            </tr>
+            <tr>
+                <td>Lucky number</td>
+                <td><input type="text" name="lucky" id="lucky"></span></td>
+                <td><span>*</span><span id="err5"></span></td>
+            </tr>
+            <tr>
+                <td>Favorite Foods</td>
+                <td><input type="checkbox" name="food" id="pizza" value="Pizza"><label for="pizza">Pizza</label></span><br>
+                    <input type="checkbox" name="food" id="Pasta" value="Pasta"><label for="Pasta">Pasta</label><br>
+                    <input type="checkbox" name="food" id="Chinese" value="Chinese"><label for="Chinese">Chinese</label>
+                    <td><span>*</span><span id="err6"></span></td>
+            </tr>
+        </table>
+        <button type="button" onclick="sendData()">Send Data</button>
+        <div id="mydiv"></div>
+        <div id="mydiv2"></div>
+    </body>
+</html>
