@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/01-student" isTestSource="false" packagePrefix="ConceptsOfProgramming.Assignment_2.Student" />
+      <sourceFolder url="file://$MODULE_DIR$/02-date" isTestSource="false" packagePrefix="ConceptsOfProgramming.Assignment_2.Date" />
+      <sourceFolder url="file://$MODULE_DIR$/03-employee" isTestSource="false" packagePrefix="ConceptsOfProgramming.Assignment_2.Employee" />
+      <sourceFolder url="file://$MODULE_DIR$/04-person" isTestSource="false" packagePrefix="ConceptsOfProgramming.Assignment_2.Person" />
+      <sourceFolder url="file://$MODULE_DIR$/05-books" isTestSource="false" packagePrefix="ConceptsOfProgramming.Assignment_2.Book" />
+      <sourceFolder url="file://$MODULE_DIR$/06-points" isTestSource="false" packagePrefix="ConceptsOfProgramming.Assignment_2.Point" />
+      <sourceFolder url="file://$MODULE_DIR$/07-complex-numbers" isTestSource="false" packagePrefix="ConceptsOfProgramming.Assignment_2.ComplexNumber" />
+      <sourceFolder url="file://$MODULE_DIR$/08-students" isTestSource="false" packagePrefix="ConceptsOfProgramming.Assignment_2.NewStudent" />
+      <sourceFolder url="file://$MODULE_DIR$/09-bank-application" isTestSource="false" packagePrefix="ConceptsOfProgramming.Assignment_2.BankApplication" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

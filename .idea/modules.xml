@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/01-COPOS/01-COP/01-COP.iml" filepath="$PROJECT_DIR$/01-COPOS/01-COP/01-COP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/07-DSA/07-DSA.iml" filepath="$PROJECT_DIR$/07-DSA/07-DSA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Assignments.iml" filepath="$PROJECT_DIR$/.idea/Assignments.iml" />
+      <module fileurl="file://$PROJECT_DIR$/04-OOP-with-Java/solutions/Customer Assignment/Customer Assignment.iml" filepath="$PROJECT_DIR$/04-OOP-with-Java/solutions/Customer Assignment/Customer Assignment.iml" />
+      <module fileurl="file://$PROJECT_DIR$/04-OOP-with-Java/solutions/EmployeeManagementSystem Assignment/EmployeeManagementSystem Assignment.iml" filepath="$PROJECT_DIR$/04-OOP-with-Java/solutions/EmployeeManagementSystem Assignment/EmployeeManagementSystem Assignment.iml" />
+      <module fileurl="file://$PROJECT_DIR$/04-OOP-with-Java/solutions/Student Assignment/Student Assignment.iml" filepath="$PROJECT_DIR$/04-OOP-with-Java/solutions/Student Assignment/Student Assignment.iml" />
+      <module fileurl="file://$PROJECT_DIR$/01-COPOS/01-COP/assignment-2/assignment-2.iml" filepath="$PROJECT_DIR$/01-COPOS/01-COP/assignment-2/assignment-2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/01-COPOS/01-COP/assignment-3/assignment-3.iml" filepath="$PROJECT_DIR$/01-COPOS/01-COP/assignment-3/assignment-3.iml" />
+    </modules>
+  </component>
+</project>
