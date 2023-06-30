@@ -1,27 +1,23 @@
 //Creating a Node class
-	public class Node {
+	public class Node<T> {
 		// Initialization of variables
-		private int element;
-		private Node next;
+		private T element;
+		private Node<T> next;
 
-		public Node getNext() {
+		public Node<T> getNext() {
 			return next;
 		}
 
-		public void setNext(Node next) {
+		public void setNext(Node<T> next) {
 			this.next = next;
 		}
 
-		public void setElement(int element) {
-			this.element = element;
-		}
-
-		public int getElement() {
+		public T getElement() {
 			return element;
 		}
-		
-		public Node(int data) {
-			element = data;
-			next = null;
-		}
+
+	public Node(T element) {
+		this.element = element;
+		this.next = null;
 	}
+}

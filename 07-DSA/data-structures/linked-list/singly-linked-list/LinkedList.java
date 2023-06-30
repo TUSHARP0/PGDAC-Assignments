@@ -1,11 +1,11 @@
 import java.util.Stack;
 
-public class LinkedList {
+public class LinkedList<T> {
 
 	// Initialization of required variables
-	private Node head;
+	private Node<T> head;
 	private int length = 0;
-	private int position;
+	private int index;
 
 	// Default Constructor
 	public LinkedList() {
@@ -13,7 +13,7 @@ public class LinkedList {
 	}
 	
 	// Getter method for Head
-	public Node getHead() {
+	public Node<T> getHead() {
 		return head;
 	}
 
@@ -23,17 +23,17 @@ public class LinkedList {
 	}
 
 	// Getter method for Position of an Element in the LinkedList
-	public int getPosition() {
-		return position;
+	public int getIndex() {
+		return index;
 	}
 
 	// Insert method: taking an Integer element as an argument
-	public void insert(int element) {
+	public void insert(T element) {
 		
 		// Wrapping the Element into a Node class Constructor
-		Node newNode = new Node(element);
+		Node<T> newNode = new Node<>(element);
 		// Saving the head value into a temp Variable
-		Node temp = head;
+		Node<T> temp = head;
 
 		// Checking if head is null i.e. the LinkedList is empty
 		if (head == null) {
@@ -57,15 +57,15 @@ public class LinkedList {
 	}
 	
 	// Insert method: taking an Integer element and position at which the Element is to be added as arguments
-	public void insert(int element, int position) {
+	public void insert(T element, int index) {
 		
 		// Wrapping the Element into a Node class Constructor 
-		Node newNode = new Node(element);
+		Node<T> newNode = new Node<>(element);
 		// Saving the head value into a temp Variable
-		Node temp = head;
+		Node<T> temp = head;
 		
 		// Position == 0: save the set the head value as the newNode and 
-		if(position == 0) {
+		if(index == 0) {
 			// Saving the values of temp into the next of the new Node class wrapped Element
 			newNode.setNext(temp);
 			// Replacing the head wit the new Node class wrapped Element
@@ -75,12 +75,12 @@ public class LinkedList {
 		// Position != 0
 		else {
 			// Iterating to Position-1
-			for(int i = 0; i<position-1; i++) {
+			for(int i = 0; i<index-1; i++) {
 				temp = temp.getNext();
 			}
 			
 			// Saving Value into the prevNode variable
-			Node prevNode = temp;
+			Node<T> prevNode = temp;
 			// Setting next value of prevNode into the newNode
 			newNode.setNext(prevNode.getNext());
 			// Setting newNode value into temp's place
@@ -94,8 +94,8 @@ public class LinkedList {
 	}
 
 	// Function to display the Elements of a LinkedList: taking LinkedList head as an argument
-	public void display(Node head) {
-		Node temp = head;
+	public void display(Node<T> head) {
+		Node<T> temp = head;
 		while (temp != null) {
 			System.out.print(temp.getElement() + " ");
 			temp = temp.getNext();
@@ -103,7 +103,7 @@ public class LinkedList {
 	}
 	
 	// Using recursion: Function to display the Elements of a LinkedList: taking LinkedList head as an argument
-	public void displayRecur(Node l) {;
+	public void displayRecur(Node<T> l) {
 		if(l != null) {
 			System.out.print(l.getElement() + " ");
 			displayRecur(l.getNext());
@@ -114,10 +114,10 @@ public class LinkedList {
 	public void displayRev() {
 		
 		// Saving the value of head into temp
-		Node temp = head;
+		Node<T> temp = head;
 		
 		// Initializing a new Stack
-		Stack<Integer> stack = new Stack<>();
+		Stack<T> stack = new Stack<>();
 		
 		// Iterating over the LinkedList
 		while(temp!=null) {
@@ -135,14 +135,14 @@ public class LinkedList {
 	// Function to Find an Element in the LinkedList: passing an Element as an argument
 	public int find(int element) {
 		// Saving the head value into temp
-		Node temp = head;
+		Node<T> temp = head;
 		//Initializing counter
 		int counter = 0;
 		
 		// Iterating over the LinkedList till temp returns null
 		while (temp != null) {
 			// Checking if the Element in the temp match the Element passed in the argument
-			if (temp.getElement() == element)
+			if (temp.getElement().equals(element))
 				// Returning position of the Element
 				return counter;
 			
@@ -156,9 +156,9 @@ public class LinkedList {
 	}
 	
 	// Function to get an Element in the LinkedList: passing the position as an argument
-	public int get(int position) {
+	public T get(int position) {
 		// Saving the value of head in temp
-		Node temp = head;
+		Node<T> temp = head;
 		// Position ==0 : Returning head Element
 		if (position == 0) {
 			return head.getElement();

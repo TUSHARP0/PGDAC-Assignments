@@ -1,11 +1,7 @@
-package linkedlist;
-
-import java.util.Scanner;
-
 public class TesterLinkedList {
 	public static void main(String[] args) {
-		try(Scanner in = new Scanner(System.in)){
-			LinkedList l1 = new LinkedList();
+		try{
+			LinkedList<Integer> l1 = new LinkedList<>();
 			
 			l1.insert(10);
 			l1.insert(20);
@@ -17,7 +13,7 @@ public class TesterLinkedList {
 			l1.display(l1.getHead());
 			System.out.println("\n");
 			
-			System.out.println("Elements in the Linked List using Recurssion");
+			System.out.println("Elements in the Linked List using Recursion");
 			l1.displayRecur(l1.getHead());
 			System.out.println("\n");
 			
