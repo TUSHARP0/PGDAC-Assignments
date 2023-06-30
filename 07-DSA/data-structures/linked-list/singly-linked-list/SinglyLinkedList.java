@@ -1,6 +1,6 @@
 import java.util.Stack;
 
-public class LinkedList<T> {
+public class SinglyLinkedList<T> {
 
 	// Initialization of required variables
 	private Node<T> head;
@@ -8,7 +8,7 @@ public class LinkedList<T> {
 	private int index;
 
 	// Default Constructor
-	public LinkedList() {
+	public SinglyLinkedList() {
 		this.head = null;
 	}
 	

@@ -1,7 +1,7 @@
 public class TesterLinkedList {
 	public static void main(String[] args) {
 		try{
-			LinkedList<Integer> l1 = new LinkedList<>();
+			SinglyLinkedList<Integer> l1 = new SinglyLinkedList<>();
 			
 			l1.insert(10);
 			l1.insert(20);
