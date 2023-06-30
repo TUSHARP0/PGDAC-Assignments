@@ -1,4 +1,4 @@
-members=["Abdul", "Tushar", "Mohan", "Pranay", "Mohan", "Rushikesh"]
+members=["Abdul", "Tushar", "Mohan", "Pranay", "Mohit", "Rushikesh"]
 
 displayNames=()=>{
     str = "Members of my Group are: <br>"
