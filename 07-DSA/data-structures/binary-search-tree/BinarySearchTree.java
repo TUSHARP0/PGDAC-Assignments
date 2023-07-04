@@ -116,8 +116,10 @@ public class BinarySeacrhTree <Integer> {
 		
 		else {
 			if((int)node.getElement() < element) {
-				findRecur()
+				findRecur(element, node.getLeft());
 			}
+			else{
+				findRecur(element, node.getRight());
 		}
 	}
 	
